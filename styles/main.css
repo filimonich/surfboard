@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap");
+html {
+  font-size: 18px;
+}
+htmlinclude tablets {
+  font-size: 17px;
+}
+htmlinclude phones {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -72,7 +82,7 @@ button {
   background-size: cover;
   background-color: #1968B1;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
 }
 .hero__container {
   display: -webkit-box;
@@ -86,28 +96,28 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 24px 0 65px;
+  padding: rem(24px) 0 rem(65px);
 }
 .hero__title-section {
   width: 45%;
 }
 .hero__main-title {
   color: #303236;
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: rem(58px);
   color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   text-transform: uppercase;
 }
 .hero__title-text {
   color: #303236;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 400;
-  line-height: 24px;
+  line-height: rem(24px);
   color: #FFFFFF;
-  font-size: 21px;
-  margin-bottom: 39px;
+  font-size: rem(21px);
+  margin-bottom: rem(39px);
 }
 
 .header {
@@ -123,7 +133,7 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
+  line-height: rem(22px);
 }
 
 .asides {
@@ -132,7 +142,7 @@ button {
   display: flex;
 }
 .asides__item {
-  margin-right: 40px;
+  margin-right: rem(40px);
 }
 .asides__item:last-child {
   margin-right: 0;
@@ -145,16 +155,16 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
+  line-height: rem(22px);
 }
 .aside__icon {
-  width: 41px;
-  margin-right: 7px;
+  width: rem(41px);
+  margin-right: rem(7px);
 }
 .aside__text {
   color: #FFFFFF;
-  font-size: 16px;
-  max-width: 85px;
+  font-size: rem(16px);
+  max-width: rem(85px);
 }
 
 .menu__list {
@@ -166,14 +176,14 @@ button {
           align-items: center;
 }
 .menu__item {
-  margin-right: 22px;
+  margin-right: rem(22px);
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 .menu__link {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: rem(18px);
+  line-height: rem(30px);
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -182,9 +192,9 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
-  font-size: 22px;
-  line-height: 30px;
+  line-height: rem(22px);
+  font-size: rem(22px);
+  line-height: rem(30px);
   color: #FFFFFF;
   text-decoration: none;
   display: -webkit-box;
@@ -195,15 +205,15 @@ button {
           align-items: center;
 }
 .contacts__icon-elem {
-  width: 13px;
-  height: 14px;
-  margin-right: 6px;
+  width: rem(13px);
+  height: rem(14px);
+  margin-right: rem(6px);
 }
 
 .logo {
   vertical-align: middle;
-  width: 85px;
-  height: 36px;
+  width: rem(85px);
+  height: rem(36px);
 }
 .logo__img {
   margin-right: 0;
@@ -222,7 +232,7 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.6px;
+  line-height: rem(22px);
 }
 
 .container {
@@ -233,11 +243,11 @@ button {
 }
 
 .button {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: bold;
   padding: rem(21px) rem(41px);
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: rem(100px);
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -250,7 +260,7 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21, 6px;
+  line-height: rem(22px);
   text-transform: none;
   color: #FFFFFF;
 }
@@ -260,7 +270,7 @@ button {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,11 +284,11 @@ button {
 }
 .section__title {
   color: #303236;
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  line-height: 32.4px;
-  font-size: 48px;
-  margin-bottom: 60px;
+  line-height: rem(32px);
+  font-size: rem(48px);
+  margin-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
 }
@@ -290,13 +300,13 @@ button {
   text-align: center;
 }
 .headline__title {
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
 }
 .headline__subtitle {
   color: #303236;
   font-size: 18px;
   font-weight: 300;
-  line-height: 21.6px;
+  line-height: rem(22px);
   font-weight: 400;
   padding: 0 30%;
 }
@@ -306,16 +316,16 @@ button {
 }
 .benefit__image-wrapper {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
 }
 .benefit__icon {
-  width: 68px;
-  height: 68px;
+  width: rem(68px);
+  height: rem(68px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -338,7 +348,7 @@ button {
 .benefits__item:before {
   content: url("../../image/section/combined-shape.png");
   position: absolute;
-  top: 30px;
+  top: rem(30px);
   right: 0;
   -webkit-transform: translate(50%);
           transform: translate(50%);
@@ -354,7 +364,7 @@ button {
 }
 
 .reviews__display {
-  padding: 42px;
+  padding: rem(42px);
   background: #F8FAF9;
 }
 .reviews__displey-inner {
@@ -363,8 +373,8 @@ button {
   display: flex;
 }
 .reviews__avatar {
-  width: 254px;
-  height: 264px;
+  width: rem(254px);
+  height: rem(264px);
 }
 .reviews__avatar-img {
   -o-object-fit: cover;
@@ -376,27 +386,27 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 .reviews__title {
   color: #303236;
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
-  line-height: 32.4px;
-  margin-bottom: 14px;
+  line-height: rem(32px);
+  margin-bottom: rem(14px);
 }
 .reviews__text {
   color: #303236;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21, 6px;
-  margin-bottom: 26px;
+  line-height: rem(22px);
+  margin-bottom: rem(26px);
 }
 .reviews__author {
   color: #303236;
   font-size: 18px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: rem(24px);
 }
 .reviews__switcher {
   display: -webkit-box;
@@ -411,9 +421,9 @@ button {
 }
 
 .interectiv-avatar {
-  width: 74px;
-  height: 74px;
-  border: 6px solid transparent;
+  width: rem(74px);
+  height: rem(74px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -444,14 +454,14 @@ button {
   color: #303236;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21, 6px;
+  line-height: rem(22px);
   color: #FFFFFF;
 }
 .form__col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 26px;
+  margin-right: rem(26px);
 }
 .form__col:last-child {
   margin-right: 0;
@@ -460,13 +470,13 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
 }
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 16px;
+  margin-right: rem(16px);
 }
 .form__block:last-child {
   margin-right: 0;
@@ -474,14 +484,14 @@ button {
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 12px 20px;
-  border: solid 3px transparent;
-  border-radius: 4px;
+  padding: rem(18px) rem(12px) rem(20px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
 }
 .form__input--textarea {
-  height: 168px;
+  height: rem(168px);
   resize: none;
-  margin-bottom: 6px;
+  margin-bottom: rem(6px);
 }
 .form__input:focus {
   border-color: #FEDB3F;
@@ -504,33 +514,33 @@ button {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding: 10px;
+  padding: rem(10px);
 }
 .radio--checkbox .radio__visible {
-  border-radius: 4px;
+  border-radius: rem(4px);
 }
 .radio--checkbox .radio__visible::before {
   background: url("../../image/form/checkmark.png") center center no-repeat;
 }
 .radio__elem {
   display: none;
-  border-radius: 5px;
+  border-radius: rem(5px);
 }
 .radio__elem:checked ~ .radio__visible::before {
   display: block;
 }
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background-color: #FFFFFF;
-  margin-right: 5px;
+  margin-right: rem(5px);
 }
 .radio__visible::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   background: #FEDB3F;
   border-radius: 50%;
   position: absolute;
@@ -541,7 +551,7 @@ button {
           transform: translate(-50%, -50%);
 }
 .radio__title--margin--bottom {
-  margin-bottom: 46px;
+  margin-bottom: rem(46px);
 }
 
 .reviews-section {
@@ -549,7 +559,7 @@ button {
   background: url("../../image/form/backform.jpg") center top no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 652px;
+  min-height: rem(652px);
   z-index: 3;
 }
 .reviews-section::before {
@@ -558,7 +568,7 @@ button {
   position: absolute;
   height: 100vh;
   width: 100%;
-  min-height: 652px;
+  min-height: rem(652px);
   z-index: -1;
 }
 
@@ -569,24 +579,24 @@ button {
   z-index: 100;
 }
 .fixed-menu__item {
-  margin-bottom: 8px;
+  margin-bottom: rem(8px);
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #FFFFFF;
 }
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: rem(6px);
+  height: rem(6px);
   border-radius: 50%;
   background: #FFFFFF;
   position: absolute;

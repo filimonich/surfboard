@@ -1,33 +1,38 @@
-$containerWidth: rem(1100px);
-$baseFontSize: rem(18px);
+$containerWidth: 1100px;
+$baseFontSize: 18px;
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
 
 // mixin
 @mixin h1 {
   color: $textblack;
   font-size: rem(48px);
   font-weight: 700;
-  line-height: 57.rem(6px);
+  line-height: rem(58px);
 }
 
 @mixin h2 {
   color: $textblack;
   font-size: rem(36px);
   font-weight: 700;
-  line-height: 43.rem(2px);
+  line-height: rem(44px);
 }
 
 @mixin h3 {
   color: $textblack;
   font-size: rem(27px);
   font-weight: 700;
-  line-height: 32.rem(4px);
+  line-height: rem(32px);
 }
 
 @mixin textBodyBold {
   color: $textblack;
   font-size: $baseFontSize;
   font-weight: 700;
-  line-height: 21.rem(6px);
+  line-height: rem(22px);
 }
 
 @mixin textBodySemibold {
@@ -41,7 +46,7 @@ $baseFontSize: rem(18px);
   color: $textblack;
   font-size: $baseFontSize;
   font-weight: 400;
-  line-height: 21,rem(6px);
+  line-height: rem(22px);
 }
 
 @mixin textSemibold {
@@ -62,10 +67,11 @@ $baseFontSize: rem(18px);
   color: $textblack;
   font-size: $baseFontSize;
   font-weight: 300;
-  line-height: 21.rem(6px);
+  line-height: rem(22px);
 }
 
 // colors
+
 $white: #FFFFFF;
 $black: #292929;
 $body: #666666;
@@ -103,4 +109,5 @@ $z-fixed-menu: 100;
 @import "./components/_radio.scss";
 @import "./components/_reviews-section.scss";
 @import "./components/_fixed-menu.scss";
+@import "./components/_hamburger.scss";
 @import "./media/_media.scss";

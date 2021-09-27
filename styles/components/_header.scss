@@ -4,3 +4,9 @@
   justify-content: space-between;
   @include textBodyBold;
 }
+
+.contacts__tel.header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}
