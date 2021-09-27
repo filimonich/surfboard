@@ -1,0 +1,30 @@
+.hero {
+  background: url("../../image/main/arnaud-mesureur.jpg") center center no-repeat;
+  background-size: cover;
+  background-color: $blue;
+  height: 100vh;
+  min-height: rem(652px);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(65px);
+  }
+  &__title-section {
+    width: 45%;
+  }
+  &__main-title {
+    @include h1;
+    color: $white;
+    margin-bottom: rem(15px);
+    text-transform: uppercase;
+  }
+  &__title-text {
+    @include textRegular;
+    color: $white;
+    font-size: rem(21px);
+    margin-bottom: rem(39px);
+  }
+}

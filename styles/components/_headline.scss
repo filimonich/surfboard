@@ -1,0 +1,13 @@
+.headline {
+  text-align: center;
+
+  &__title {
+    margin-bottom: rem(17px);
+  }
+
+  &__subtitle {
+    @include textBodylight;
+    font-weight: 400;
+    padding: 0 30%;
+  }
+}

@@ -1,0 +1,18 @@
+.reviews-section {
+   position: relative;
+   background: url("../../image/form/backform.jpg") center top no-repeat;
+   background-size: cover;
+   height: 100vh;
+   min-height: rem(652px);
+   z-index: 3;
+
+   &::before {
+      background: rgb(57 53 53 / 40%);
+      content: "";
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      min-height: rem(652px);
+      z-index: -1;
+   }
+}

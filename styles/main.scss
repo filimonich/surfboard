@@ -1,0 +1,106 @@
+$containerWidth: rem(1100px);
+$baseFontSize: rem(18px);
+
+// mixin
+@mixin h1 {
+  color: $textblack;
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: 57.rem(6px);
+}
+
+@mixin h2 {
+  color: $textblack;
+  font-size: rem(36px);
+  font-weight: 700;
+  line-height: 43.rem(2px);
+}
+
+@mixin h3 {
+  color: $textblack;
+  font-size: rem(27px);
+  font-weight: 700;
+  line-height: 32.rem(4px);
+}
+
+@mixin textBodyBold {
+  color: $textblack;
+  font-size: $baseFontSize;
+  font-weight: 700;
+  line-height: 21.rem(6px);
+}
+
+@mixin textBodySemibold {
+  color: $textblack;
+  font-size: $baseFontSize;
+  font-weight: 500;
+  line-height: rem(24px);
+}
+
+@mixin textBodyRegular {
+  color: $textblack;
+  font-size: $baseFontSize;
+  font-weight: 400;
+  line-height: 21,rem(6px);
+}
+
+@mixin textSemibold {
+  color: $textblack;
+  font-size: rem(16px);
+  font-weight: 500;
+  line-height: rem(24px);
+}
+
+@mixin textRegular {
+  color: $textblack;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(24px);
+}
+
+@mixin textBodylight {
+  color: $textblack;
+  font-size: $baseFontSize;
+  font-weight: 300;
+  line-height: 21.rem(6px);
+}
+
+// colors
+$white: #FFFFFF;
+$black: #292929;
+$body: #666666;
+$yellow: #FEDB3F;
+$textblack: #303236;
+$blue: #1968B1;
+
+//z-indexs
+
+$z-fixed-menu: 100;
+
+// setups
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap");
+@import "./layout/_layout.scss";
+
+// components
+
+@import "./components/_hero.scss";
+@import "./components/_header.scss";
+@import "./components/_asides.scss";
+@import "./components/_aside.scss";
+@import "./components/_menu.scss";
+@import "./components/_contacts.scss";
+@import "./components/_logo.scss";
+@import "./components/_header.scss";
+@import "./components/_container.scss";
+@import "./components/_button.scss";
+@import "./components/_section.scss";
+@import "./components/_headline.scss";
+@import "./components/_benefit.scss";
+@import "./components/_benefits.scss";
+@import "./components/_reviews.scss";
+@import "./components/_interectiv-avatar.scss";
+@import "./components/_form.scss";
+@import "./components/_radio.scss";
+@import "./components/_reviews-section.scss";
+@import "./components/_fixed-menu.scss";
+@import "./media/_media.scss";

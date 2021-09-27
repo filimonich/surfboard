@@ -1,0 +1,17 @@
+.contacts {
+  &__tel {
+    @include textBodyBold;
+    font-size: rem(22px);
+    line-height: rem(30px);
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-elem {
+    width: rem(13px);
+    height: rem(14px);
+    margin-right: rem(6px);
+  }
+}

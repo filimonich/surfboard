@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  @include textBodyRegular;
+  color: $white;
+
+  &__col {
+    flex: 1;
+    margin-right: rem(26px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: rem(14px);
+  }
+
+  &__block {
+    flex: 1;
+    margin-right: rem(16px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(12px) rem(20px);
+    border: solid rem(3px) transparent;
+    border-radius: rem(4px);
+
+    &--textarea {
+      height: rem(168px);
+      resize: none;
+      margin-bottom: rem(6px);
+    }
+
+    &:focus {
+      border-color: $yellow;
+      outline: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

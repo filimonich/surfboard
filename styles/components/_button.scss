@@ -1,0 +1,25 @@
+.button {
+  font-size: rem(16px);
+  font-weight: bold;
+  padding: rem(21px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  &--theme--yellow {
+    background: $yellow;
+  }
+
+  &--theme--transparent {
+    @include textBodyRegular;
+    text-transform: none;
+    color: $white;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

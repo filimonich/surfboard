@@ -1,0 +1,15 @@
+.aside {
+  display: flex;
+  @include textBodyBold;
+
+  &__icon {
+    width: rem(41px);
+    margin-right: rem(7px);
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(16px);
+    max-width: rem(85px);
+  }
+}

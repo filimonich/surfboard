@@ -1,0 +1,22 @@
+.menu {
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: rem(22px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: rem(18px);
+    line-height: rem(30px);
+    color: $white;
+    text-decoration: none;
+  }
+}
