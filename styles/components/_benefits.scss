@@ -1,10 +1,19 @@
 .benefits {
   display: flex;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__item {
     flex: 1;
     padding: 0 3%;
     position: relative;
+
+    @include phones {
+      padding: 0;
+      margin-bottom: rem(18px);
+    }
 
     &:before {
       content: url("../../image/section/combined-shape.png");
@@ -12,6 +21,13 @@
       top: rem(30px);
       right: 0;
       transform: translate(50%);
+
+      @include tablets {
+        display: none;
+      }
+      @include phones {
+        display: none;
+      }
     }
 
     &:first-child {

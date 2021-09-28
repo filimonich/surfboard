@@ -1,8 +1,9 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   @include textBodyBold;
+
 }
 
 .contacts__tel.header__phone-number {

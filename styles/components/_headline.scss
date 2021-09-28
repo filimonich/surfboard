@@ -9,5 +9,10 @@
     @include textBodylight;
     font-weight: 400;
     padding: 0 30%;
+
+    @include phones {
+      padding: 0 5%;
+      margin-bottom: rem(53px);
+    }
   }
 }

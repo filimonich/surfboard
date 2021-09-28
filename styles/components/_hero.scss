@@ -5,6 +5,22 @@
   height: 100vh;
   min-height: rem(652px);
 
+  @include tablets {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: rem(92px);
+      min-width: 20rem;
+      top: 0;
+      background-color: $blue;
+      display: flex;
+      position: absolute;
+    }
+
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,6 +28,7 @@
     height: 100%;
     padding: rem(24px) 0 rem(65px);
   }
+
   &__title-section {
     width: 45%;
 
@@ -23,6 +40,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+
     }
   }
 
@@ -38,6 +56,7 @@
     margin-bottom: rem(15px);
     text-transform: uppercase;
   }
+
   &__title-text {
     @include textRegular;
     color: $white;
@@ -46,6 +65,9 @@
 
     @include tablets {
       padding: 0 25%;
+    }
+    @include phones {
+      padding: 0 16%;
     }
   }
 }

@@ -7,6 +7,12 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+
   }
 
   &__icon-elem {
