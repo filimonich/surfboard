@@ -1,0 +1,18 @@
+.socials {
+  margin-left: 210px;
+  cursor: pointer;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  &__item--icon--vk {
+    width: rem(20px);
+    height: rem(20px);
+    position: relative;
+    display: block;
+    text-decoration: none;
+  }
+}

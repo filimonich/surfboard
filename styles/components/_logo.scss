@@ -1,8 +1,9 @@
 .logo {
   vertical-align: middle;
-  width: rem(85px);
-  height: rem(36px);
   &__img {
     margin-right: 0;
+    width: rem(56px);
+    height: rem(36px);
+    fill: $white;
   }
 }

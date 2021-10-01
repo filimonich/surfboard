@@ -1,0 +1,30 @@
+.footer {
+  padding: 44px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__contacts {
+    // position: absolute;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  &__text {
+    @include textRegular;
+    color: $black;
+  }
+
+  &__phone-number {
+    @include textRegular;
+    color: $black;
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+  }
+
+}

@@ -16,8 +16,22 @@
   }
 
   &__icon-elem {
-    width: rem(13px);
-    height: rem(14px);
-    margin-right: rem(6px);
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(8px);
   }
+
+  &__icon-elem--color--white {
+    fill: white;
+  }
+
+  &__text {
+    @include textBodyRegular;
+    color: $white;
+  }
+
+  &__text--color--black {
+    color: $black;
+  }
+
 }
