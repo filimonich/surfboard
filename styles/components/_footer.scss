@@ -9,12 +9,6 @@
     flex-direction: column;
   }
 
-  &__contacts {
-    // position: absolute;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-  }
 
   &__text {
     @include textRegular;
