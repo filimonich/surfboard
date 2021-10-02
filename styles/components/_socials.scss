@@ -1,6 +1,10 @@
 .socials {
-  margin-left: 210px;
+  // margin-left: rem(210px);
   cursor: pointer;
+
+  // @include phones {
+  //  margin-left: 0;
+  // }
 
   &__item {
     display: inline-block;
@@ -9,10 +13,18 @@
   }
 
   &__item--icon--vk {
+    // position: relative;
+    // display: block;
+    // text-decoration: none;
+  }
+
+  &__link {
     width: rem(20px);
     height: rem(20px);
-    position: relative;
-    display: block;
-    text-decoration: none;
+    fill: $grey;
+
+    &:hover {
+      fill: $black;
+    }
   }
 }

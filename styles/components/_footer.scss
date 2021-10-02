@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__contacts {
     // position: absolute;
     // display: flex;
@@ -15,11 +19,20 @@
   &__text {
     @include textRegular;
     color: $black;
+
+    @include phones {
+      margin-bottom: rem(12px);
+    }
   }
 
   &__phone-number {
     @include textRegular;
     color: $black;
+
+    @include phones {
+      justify-content: center;
+      margin-bottom: rem(20px);
+    }
   }
 
   &__col {
