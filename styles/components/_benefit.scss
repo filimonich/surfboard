@@ -38,4 +38,8 @@
   &__title {
     @include h3
   }
+
+  &__desc {
+    color: $body;
+  }
 }

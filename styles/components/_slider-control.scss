@@ -1,3 +1,7 @@
-.slider-control__icon--left {
-  transform: rotate(180deg);
+.slider-control {
+  &__icon {
+    width: rem(24px);
+    height: rem(40px);
+    
+  }
 }

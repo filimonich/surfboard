@@ -156,12 +156,12 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
+      <section class="section section-slider">
+        <div class="container ">
           <div class="slider-container">
             <a class="slider-control">
-              <svg class="slider-control__icon slider-control__icon--left" alt="left button">
-                <use xlink:href="./sprite/sprite.svg#left-right-btn"></use>
+              <svg class="slider-control__icon" alt="left button">
+                <use xlink:href="./sprite/sprite.svg#left-btn"></use>
               </svg>
             </a>
             <div class="slider">
@@ -170,48 +170,51 @@
                   <img src="./image/slider/longboard.png" alt="photo longboard" class="slider__pic">
                 </div>
                 <div class="slider__items">
-                  <!-- <div class="slider__dropdown">
-                  <span class="slider__dropdown-title">Параметры</span>
-                  <div class="slider__description">
-                    <ul class="slider__dropdown-list">
-                      <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="design icon">
-                          <use xlink:href="./sprite/sprite.svg#design"></use>
-                        </svg>
-                        <div class="slider__dropdown-text">Длина доски</div>
-                        <div class="slider__dropdown-desc">от 2,5 м</div>
-                      </li>
-                      <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="design icon">
-                          <use xlink:href="./sprite/sprite.svg#design"></use>
-                        </svg>
-                        <div class="slider__dropdown-text">Ширина доски</div>
-                        <div class="slider__dropdown-desc">от 40 см</div>
-                      </li>
-                      <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="design icon">
-                          <use xlink:href="./sprite/sprite.svg#design"></use>
-                        </svg>
-                        <div class="slider__dropdown-text">Толщина</div>
-                        <div class="slider__dropdown-desc">8 см</div>
-                      </li>
-                      <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="design icon">
-                          <use xlink:href="./sprite/sprite.svg#design"></use>
-                        </svg>
-                        <div class="slider__dropdown-text">Срок службы</div>
-                        <div class="slider__dropdown-desc">5 лет</div>
-                      </li>
-                      <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="design icon">
-                          <use xlink:href="./sprite/sprite.svg#design"></use>
-                        </svg>
-                        <div class="slider__dropdown-text">Вес</div>
-                        <div class="slider__dropdown-desc">7-8 кг</div>
-                      </li>
-                    </ul>
+                  <div class="slider__dropdown">
+                    <svg class="slider__parameters-icon" alt="parameters icon">
+                      <use xlink:href="./sprite/sprite.svg#parameters"></use>
+                    </svg>
+                    <span class="slider__dropdown-title">Параметры</span>
+                    <div class="slider__description">
+                      <ul class="slider__dropdown-list">
+                        <li class="slider__dropdown-item">
+                            <svg class="slider__dropdown-icon" alt="length icon">
+                              <use xlink:href="./sprite/sprite.svg#length"></use>
+                            </svg>
+                          <div class="slider__dropdown-text">Длина доски</div>
+                          <div class="slider__dropdown-desc">от 2,5 м</div>
+                        </li>
+                        <li class="slider__dropdown-item">
+                          <svg class="slider__dropdown-icon" alt="width icon">
+                            <use xlink:href="./sprite/sprite.svg#width"></use>
+                          </svg>
+                          <div class="slider__dropdown-text">Ширина доски</div>
+                          <div class="slider__dropdown-desc">от 40 см</div>
+                        </li>
+                        <li class="slider__dropdown-item">
+                          <svg class="slider__dropdown-icon" alt="thickness icon">
+                            <use xlink:href="./sprite/sprite.svg#thickness"></use>
+                          </svg>
+                          <div class="slider__dropdown-text">Толщина</div>
+                          <div class="slider__dropdown-desc">8 см</div>
+                        </li>
+                        <li class="slider__dropdown-item">
+                          <svg class="slider__dropdown-icon" alt="life-time icon">
+                            <use xlink:href="./sprite/sprite.svg#life-time"></use>
+                          </svg>
+                          <div class="slider__dropdown-text">Срок службы</div>
+                          <div class="slider__dropdown-desc">5 лет</div>
+                        </li>
+                        <li class="slider__dropdown-item">
+                          <svg class="slider__dropdown-icon" alt="weight icon">
+                            <use xlink:href="./sprite/sprite.svg#weight"></use>
+                          </svg>
+                          <div class="slider__dropdown-text">Вес</div>
+                          <div class="slider__dropdown-desc">7-8 кг</div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div> -->
                   <h2 class="section__title slider__title">Лонгборд 2.0</h2>
                   <div class="slider__benefits">
                     <div class="slider__benefits-text">
@@ -225,16 +228,18 @@
                     </div>
                     <div class="slider__options">
                       <div class="slider__option">
-                        <span class="slider__size">Длина доски</span>
+                        <span class="slider__option-size">Длина доски</span>
                         <span class="slider__size">от 2,5 метров</span>
                       </div>
                       <div class="slider__option">
-                        <span class="slider__size">Ширина доски</span>
+                        <span class="slider__option-size">Ширина доски</span>
                         <span class="slider__size">от 40 сантиметров</span>
                       </div>
                     </div>
-                    <div class="slider__options">
-                      <div class="slider__price">7000 ₽</div>
+                    <div class="slider__options slider__options-price">
+                      <div class="slider__price">
+                        <p>7000 ₽</p>
+                      </div>
                       <button class="button button--theme--yellow">Заказать</button>
                     </div>
                   </div>
@@ -243,7 +248,7 @@
             </div>
             <a class="slider-control">
               <svg class="slider-control__icon" alt="left button">
-                <use xlink:href="./sprite/sprite.svg#left-right-btn"></use>
+                <use xlink:href="./sprite/sprite.svg#right-btn"></use>
               </svg>
             </a>
           </div>

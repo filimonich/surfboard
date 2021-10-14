@@ -2,7 +2,7 @@
 
   &__display {
     padding: rem(42px);
-    background: #F8FAF9;
+    background: $grideperleft;
     margin-bottom: rem(15px);
 
     @include tablets {
