@@ -36,7 +36,11 @@
   }
 
   &__title {
-    @include h3
+    @include h3;
+
+    @include phones {
+      margin-bottom: rem(10px);
+    }
   }
 
   &__desc {

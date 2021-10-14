@@ -55,6 +55,11 @@
     color: $white;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+    }
   }
 
   &__title-text {
@@ -67,7 +72,8 @@
       padding: 0 25%;
     }
     @include phones {
-      padding: 0 16%;
+      padding: 0 14%;
+      font-size: rem(18px);
     }
   }
 }

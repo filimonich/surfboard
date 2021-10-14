@@ -2,7 +2,14 @@
   text-align: center;
 
   &__title {
-    margin-bottom: rem(17px);
+    margin-bottom: rem(18px);
+
+    @include phones {
+      font-size: rem(40px);
+      line-height: rem(36px);
+      margin-bottom: rem(8px);
+    }
+
   }
 
   &__subtitle {
@@ -13,8 +20,10 @@
     margin-bottom: rem(50px);
 
     @include phones {
+      font-size: rem(18px);
+      line-height: rem(22px);
       padding: 0 5%;
-      margin-bottom: rem(53px);
+      margin-bottom: rem(54px);
     }
   }
 }

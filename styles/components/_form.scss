@@ -64,6 +64,16 @@
         height: rem(82px);
       }
     }
+    
+    @include phones {
+      height: rem(36px);
+
+      &--textarea {
+        height: rem(82px);
+      }
+
+    }
+
   }
 
   &__controls {
@@ -73,6 +83,7 @@
     @include phones {
      justify-content: center;
     }
+
   }
 
 &__buttons {

@@ -1,16 +1,54 @@
 .slider {
   padding: 0 rem(64px) rem(26px);
 
+  @include tablets {
+    padding: rem(50px);
+  }
+
   &__wrapper {
     display: flex;
     // justify-content: space-between;
     // align-items: center;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url('../../image/slider/puddle.svg') center center / cover no-repeat;
+      display: block;
+      width: rem(398px);
+      height: rem(378px);
+      top: 18%;
+      left: 0;
+      z-index: -10;
+
+      @include tablets {
+        width: rem(306px);
+        height: rem(292px);
+        top: 10%;
+        left: 8%;
+      }
+    }
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   &__img {
     width: rem(420px);
     height: rem(538px);
     margin-right: rem(56px);
+
+    @include tablets {
+      width: rem(318px);
+      height: rem(418px);
+      margin-right: 0;
+    }
+
   }
 
   &__pic {
@@ -18,14 +56,6 @@
     width: 100%;
     height: 100%;
 
-    &:before {
-      content: url(../../image/slider/parameters.svg);
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(50%);
-      fill: $white;
-    }
   }
 
   &__items {
@@ -51,18 +81,23 @@
     &:hover {
       background-color: $azure;
     }
-    
+
     &:hover .slider__description {
       display: block;
       opacity: 1;
     }
-    
+
+    @include tablets {
+      display: none;
+    }
+
   }
-  
+
   &__parameters-icon {
     fill: $white;
     width: rem(38px);
     height: rem(38px);
+
   }
 
   // &__dropdown-title {
@@ -70,8 +105,15 @@
   // }
 
   &__benefits {
-  width: rem(374px);
-  height: auto;
+    width: rem(374px);
+    height: auto;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
   }
 
@@ -79,10 +121,21 @@
     @include textBodyRegular;
     color: $body;
     margin-bottom: rem(24px);
+
+    @include tablets {
+      width: 152%;
+      text-align: center;
+    }
   }
 
   &__title {
     text-align: left;
+
+    @include tablets {
+      font-size: rem(30px);
+      text-align: center;
+      margin-bottom: rem(14px);
+    }
   }
 
   &__options {
@@ -109,11 +162,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include tablets {
+      margin-right: rem(2px);
+      margin-left: rem(44px);
+    }
   }
 
   &__price {
     font-size: rem(60px);
-    margin-right: rem(28px);
+    margin-right: rem(30px);
+
+    @include tablets {
+      margin-left: rem(10px);
+    }
+
   }
 
   &__option-size {
@@ -127,26 +190,24 @@
 
   &__description {
     position: absolute;
-    width: 273px;
-    height: auto;
     background: $alto;
     border-radius: 5px;
     top: 0;
     left: 100%;
-    // display: none;
-    display: block;
-    padding: rem(12px) rem(18px);
+    display: none;
+    // display: block;
+    padding: rem(18px) rem(10px);
 
     &:before {
       content: "";
       width: 0;
       height: 0;
       position: absolute;
-      top: 100%; 
+      top: 100%;
     }
   }
 
-  &__dropdown-list{
+  &__dropdown-list {
     color: $black;
     display: flex;
     flex-direction: column;
@@ -155,6 +216,7 @@
   &__dropdown-item {
     display: flex;
     justify-content: start;
+    align-items: center;
     width: rem(246px);
     height: rem(44px);
 
@@ -163,7 +225,19 @@
   &__dropdown-icon {
     width: rem(32px);
     height: rem(32px);
+    margin-left: rem(15px);
     margin-right: rem(12px);
+  }
+
+  &__dropdown-text {
+    @include textBodySemibold;
+    font-size: rem(16px);
+  }
+
+  &__dropdown-benefits {
+    @include textRegular;
+    margin-left: auto;
+    margin-right: rem(15px);
   }
 
 }

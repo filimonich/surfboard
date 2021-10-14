@@ -8,6 +8,10 @@
     @include tablets {
       margin-bottom: rem(32px);
     }
+
+    @include phones {
+      padding: 0 rem(30px);
+    }
   }
 
   &__displey-inner {
@@ -46,10 +50,16 @@
   &__title {
     @include h3;
     margin-bottom: rem(14px);
+
+    @include phones {
+      font-size: rem(27px);
+      padding: 0 rem(100px);
+    }
   }
 
   &__text {
     @include textBodyRegular;
+    color: $body;
     margin-bottom: rem(26px);
   }
 

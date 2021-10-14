@@ -5,7 +5,8 @@
   padding: rem(10px);
 
   @include phones {
-    margin-bottom: rem(20px);
+    align-items: center;
+
   }
 
   &--checkbox {
@@ -16,6 +17,10 @@
         background: url("/image/main/checkmark.svg") center center no-repeat;
       }
     }
+
+    @include phones {
+      margin-bottom: rem(26px);
+      }
 
   }
 
@@ -54,5 +59,10 @@
 
   &__title--margin--bottom {
     margin-bottom: rem(46px);
+
+    @include phones {
+      margin-bottom: 0;
+    }
+
   }
 }

@@ -2,7 +2,7 @@
   display: none;
 
   @include tablets {
-    position: fixed;
+    position: absolute;
     top: rem(34px);
     right: 5%;
     width: rem(24px);
