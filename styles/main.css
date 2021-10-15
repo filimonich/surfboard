@@ -86,7 +86,7 @@ button {
 }
 
 .hero {
-  background: url("../../image/main/arnaud-mesureur.jpg") center center no-repeat;
+  background: url("./../image/main/arnaud-mesureur.jpg") center center no-repeat;
   background-size: cover;
   background-color: #1968B1;
   height: 100vh;
@@ -578,7 +578,7 @@ button {
   }
 }
 .benefits__item:before {
-  content: url("../../image/section/combined-shape.png");
+  content: url("./../image/section/combined-shape.png");
   position: absolute;
   top: 1.6666666667rem;
   right: 0;
@@ -856,7 +856,7 @@ button {
   border-radius: 0.2222222222rem;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("/image/main/checkmark.svg") center center no-repeat;
+  background: url("./../image/main/checkmark.svg") center center no-repeat;
 }
 @media screen and (max-width: 480px) {
   .radio--checkbox {
@@ -1170,7 +1170,7 @@ button {
 .slider__wrapper::before {
   content: "";
   position: absolute;
-  background: url("../../image/slider/puddle.svg") center center/cover no-repeat;
+  background: url("./../image/slider/puddle.svg") center center/cover no-repeat;
   display: block;
   width: 22.1111111111rem;
   height: 21rem;
