@@ -457,7 +457,7 @@ button {
   }
 }
 @media screen and (max-width: 480px) {
-  .section .section__title-reviews {
+  .section__title-reviews {
     margin-bottom: 1.4444444444rem;
     font-size: 2.2222222222rem;
     line-height: 2rem;
@@ -606,8 +606,6 @@ button {
 }
 
 .reviews__display {
-  padding: 2.3333333333rem;
-  background: #F8FAF9;
   margin-bottom: 0.8333333333rem;
 }
 @media screen and (max-width: 768px) {
@@ -615,18 +613,29 @@ button {
     margin-bottom: 1.7777777778rem;
   }
 }
+.reviews__list {
+  position: relative;
+  padding: 2.3333333333rem;
+  background: #F8FAF9;
+  min-height: 19.3333333333rem;
+}
 @media screen and (max-width: 480px) {
-  .reviews__display {
-    padding: 0 1.6666666667rem;
+  .reviews__list {
+    padding: 3.1111111111rem 1.6666666667rem 1.6666666667rem;
   }
 }
-.reviews__displey-inner {
+.reviews__item {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
-  .reviews__displey-inner {
+  .reviews__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -636,6 +645,11 @@ button {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 .reviews__avatar {
   width: 14.1111111111rem;
@@ -658,7 +672,22 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 1.1111111111rem;
+  margin-left: 2.2222222222rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 .reviews__title {
   color: #303236;
@@ -679,6 +708,7 @@ button {
   font-weight: 400;
   line-height: 1.2222222222rem;
   color: #666666;
+  width: 25.5555555556rem;
   margin-bottom: 1.4444444444rem;
 }
 .reviews__author {
@@ -698,27 +728,26 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-.interectiv-avatar {
+.reviews__switcher-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 4.1111111111rem;
   height: 4.1111111111rem;
   border: 0.3333333333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
-.interectiv-avatar--active {
+.reviews__switcher-item.active {
   border-color: #FEDB3F;
 }
-.interectiv-avatar__link {
+.reviews__switcher-link {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  display: block;
-}
-.interectiv-avatar__img {
   display: block;
   width: 100%;
   height: 100%;

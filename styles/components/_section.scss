@@ -25,7 +25,8 @@
 
   }
 
-  .section__title-reviews {
+  &__title-reviews {
+    
     @include phones {
       margin-bottom: rem(26px);
       font-size: rem(40px);
