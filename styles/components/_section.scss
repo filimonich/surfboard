@@ -1,5 +1,5 @@
 .section {
-  height: 100vh;
+  // height: 100vh;
   min-height: rem(650px);
   display: flex;
   flex-direction: column;
@@ -20,13 +20,15 @@
       margin-bottom: rem(40px);
       font-size: rem(40px);
       line-height: rem(40px);
-
     }
+  }
 
+  &__title-team{
+    margin-bottom: rem(60px);
   }
 
   &__title-reviews {
-    
+
     @include phones {
       margin-bottom: rem(26px);
       font-size: rem(40px);

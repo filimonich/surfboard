@@ -11,6 +11,6 @@ $(".reviews__switcher-link").click((e) => {
   const itemToShow = findBlockByAlias(target);
   const curItem = $this.closest(".reviews__switcher-item")
 
-  itemToShow.addClass("active").siblings().removeClass("active");
-  curItem.addClass("active").siblings().removeClass("active");
+  itemToShow.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
+  curItem.addClass("reviews__item--active").siblings().removeClass("reviews__item--active");
 })

@@ -26,6 +26,11 @@
     pointer-events: none;
     transition: .3s;
     opacity: 0;
+    top: rem(42px);
+    right: 0;
+    bottom: 0;
+    left: rem(42px);
+    transition-delay: 0.1s;
 
     @include tablets {
       flex-direction: column;
@@ -34,7 +39,7 @@
     }
   }
 
-  &__item.active {
+  &__item.reviews__item--active {
     position: static;
     opacity: 1;
     pointer-events: unset;
@@ -110,7 +115,7 @@
 
   }
 
-  &__switcher-item.active {
+  &__switcher-item.reviews__item--active {
     border-color: $yellow;
   }
 
