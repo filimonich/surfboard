@@ -123,9 +123,14 @@
     margin-bottom: rem(24px);
 
     @include tablets {
-      width: 152%;
+      width: 140%;
       text-align: center;
     }
+
+    @include phones {
+      width: 98%;
+      text-align: center;
+    } 
   }
 
   &__title {

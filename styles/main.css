@@ -1180,6 +1180,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+.slider-container .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media screen and (max-width: 768px) {
   .slider-container {
@@ -1328,7 +1335,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .slider__benefits-text {
-    width: 152%;
+    width: 140%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__benefits-text {
+    width: 98%;
     text-align: center;
   }
 }
