@@ -9,8 +9,7 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 
   <link rel="stylesheet" href="./styles/main.css">
   <title>Surfboard | Main Page</title>
@@ -457,7 +456,7 @@
                   <use xlink:href="./sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
-              <div class="team__content team__content--active">
+              <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
                     <img src="./image/team/boris.png" alt="avatar Boris Fedorovich" class="team__img">
@@ -520,7 +519,7 @@
                   <use xlink:href="./sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
-              <div class="team__content team__content--active">
+              <div class="team__content">
                 <div class="team__content-block">
                   <div class="team__member">
                     <img src="./image/team/ekaterina.png" alt="avatar Ekaterina Ivanova" class="team__img">
@@ -636,35 +635,35 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="phone" class="form__input">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="street" class="form__input">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="house" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="frame" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="apartment" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="floor" class="form__input">
                 </label>
               </div>
             </div>
@@ -672,7 +671,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Коментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
                 </label>
               </div>
               <div class="form__controls">
@@ -705,7 +704,7 @@
         <div id="modal" class="modal">
           <div class="modal__content">
             <div class="modal__title">
-              <p>Сообщение отравлено</p>
+              Сообщение отравлено
             </div>
             <div class="modal__button-container">
               <button type="close" class="button app-submit-modal button--theme--yellow">Закрыть</button>
@@ -830,7 +829,8 @@
 <script src="./js/reviews-tabs.js"></script>
 <script src="./js/slider.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="./js/modal.js"></script>
 
 

@@ -9,6 +9,19 @@
     align-items: center;
   }
 
+  &__content--active {
+    height: 50px;
+
+    @include tablets {
+      height: 340px;
+      margin-bottom: 30px;
+    }
+
+    @include phones {
+      margin-bottom: 30px;
+    }
+  }
+
   &__item {
     // display: flex;
     // flex-direction: column;
@@ -21,13 +34,18 @@
     @include tablets {
       flex: initial;
       margin-right: 0;
+      height: auto;
+    }
+
+    @include phones {
+      height: auto;
     }
 
     &:last-child {
       margin-right: 0;
     }
   }
-  
+
   &__member {
     margin-bottom: rem(22px);
   }
@@ -38,18 +56,26 @@
     align-items: center;
     justify-content: center;
     margin-bottom: rem(8px);
+
+    @include tablets {
+      margin-bottom: 0;
+    }
+
+    @include phones {
+      margin-bottom: 0;
+    }
   }
 
   &__name {
     @include textBodyBold;
     font-size: rem(20px);
   }
-  
+
   &__icon {
     width: rem(10px);
     height: rem(10px);
   }
-  
+
   &__content {
     // align-items: center;
     // text-align: center;
@@ -63,19 +89,11 @@
     }
   }
 
-  &__content--active {
-    height: 50px;
-
-    @include tablets {
-      height: 340px; 
-    }
-  }
-  
   &__profession {
     @include textBodyRegular;
     margin-bottom: rem(4px);
   }
-  
+
   &__description {
     @include textBodylight;
   }
@@ -89,7 +107,7 @@
 }
 
 .team--version--desktop .team__content {
-  position: absolute;
+  // position: absolute;
   top: 100%;
 }
 
@@ -102,5 +120,5 @@
 }
 
 .team--version--mobile .team__item {
-  margin-bottom: rem(10px);
+  margin-bottom: rem(16px);
 }
