@@ -9,6 +9,8 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+
 
   <link rel="stylesheet" href="./styles/main.css">
   <title>Surfboard | Main Page</title>
@@ -259,7 +261,7 @@
               </li>
               <li class="slider__wrapper">
                 <div class="slider__img">
-                  <img src="./image/slider/longboard.png" alt="photo longboard" class="slider__pic">
+                  <img src="./image/slider/shortboard.png" alt="photo shortboard" class="slider__pic">
                 </div>
                 <div class="slider__items">
                   <div class="slider__dropdown">
@@ -275,7 +277,7 @@
                           </svg>
                           <div class="slider__dropdown-text">Длина доски</div>
                           <div class="slider__dropdown-benefits">
-                            <div class="slider__dropdown-desc">от 2,5 м</div>
+                            <div class="slider__dropdown-desc">от 1,5 м</div>
                           </div>
                         </li>
                         <li class="slider__dropdown-item">
@@ -284,7 +286,7 @@
                           </svg>
                           <div class="slider__dropdown-text">Ширина доски</div>
                           <div class="slider__dropdown-benefits">
-                            <div class="slider__dropdown-desc">от 40 см</div>
+                            <div class="slider__dropdown-desc">от 30 см</div>
                           </div>
                         </li>
                         <li class="slider__dropdown-item">
@@ -317,30 +319,29 @@
                       </ul>
                     </div>
                   </div>
-                  <h2 class="section__title slider__title">Лонгборд 2.0</h2>
+                  <h2 class="section__title slider__title">Шортборд</h2>
                   <div class="slider__benefits">
                     <div class="slider__benefits-text">
                       <p>
-                        Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и
-                        ехать.
-                        Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не
-                        прилагая
-                        особых усилий ехать по ним.
+                        Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость,
+                        делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по
+                        самому гребню волны), различные прыжки с вращениями или без, а также катание
+                        в трубах.
                       </p>
                     </div>
                     <div class="slider__options">
                       <div class="slider__option">
                         <span class="slider__option-size">Длина доски</span>
-                        <span class="slider__size">от 2,5 метров</span>
+                        <span class="slider__size">от 1,5 метров</span>
                       </div>
                       <div class="slider__option">
                         <span class="slider__option-size">Ширина доски</span>
-                        <span class="slider__size">от 40 сантиметров</span>
+                        <span class="slider__size">от 30 сантиметров</span>
                       </div>
                     </div>
                     <div class="slider__options slider__options-price">
                       <div class="slider__price">
-                        <p>7000 ₽</p>
+                        <p>12000 ₽</p>
                       </div>
                       <button class="button button--theme--yellow">Заказать</button>
                     </div>
@@ -434,7 +435,7 @@
                   <use xlink:href="./sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
-              <div class="team__content team__content--active">
+              <div class="team__content">
                 <dic class="team__content-block">
                   <div class="team__profession">Тестировщик</div>
                   <div class="team__description">
@@ -630,6 +631,7 @@
         <div class="container">
           <h2 class="section__title section__title--white">Закажите доставку</h2>
           <form action="#" class="form">
+            <input type="hidden" name="to" value="somewhere@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
@@ -693,16 +695,28 @@
                 </label>
               </div>
               <div class="form__buttons">
-                <button type="submit" class="button button--theme--yellow">Заказать</button>
+                <button type="submit" class="button app-open-modal button--theme--yellow">Заказать</button>
                 <button type="reset" class="button button--theme--transparent">Очистить</button>
               </div>
             </div>
           </form>
         </div>
-      </section>
 
+        <div id="modal" class="modal">
+          <div class="modal__content">
+            <div class="modal__title">
+              <p>Сообщение отравлено</p>
+            </div>
+            <div class="modal__button-container">
+              <button type="close" class="button app-submit-modal button--theme--yellow">Закрыть</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
   </div>
+
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
@@ -769,9 +783,7 @@
     </div>
   </section>
 
-
 </body>
-
 
 <div class="hamburger">
   <span class="hamburger__plank"></span>
@@ -810,12 +822,16 @@
 </div>
 
 <script src="./jquery/jquery-3.6.0.min.js"></script>
+
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="./js/team.js"></script>
 <script src="./js/overlay.js"></script>
 <script src="./js/reviews-tabs.js"></script>
 <script src="./js/slider.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="./js/modal.js"></script>
 
 
 </html>
