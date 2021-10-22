@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  max-width: 500px;
+  max-width: rem(500px);
 
   &.error-modal {
     .modal__title {
@@ -44,7 +44,7 @@
 
     &__title {
     @include textBodySemibold;
-    margin-bottom: rem(15px);
+    margin-bottom: rem(16px);
   }
 }
 

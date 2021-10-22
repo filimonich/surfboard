@@ -8,13 +8,7 @@ $('.slider-control__icon--direction--prev').click(e => {
   slider.goToPrevSlide();
 })
 
-
 $('.slider-control__icon--direction--next').click(e => {
   e.preventDefault();
   slider.goToNextSlide();
 })
-
-// $(document).ready(function(){
-//   $('.slider').bxSlider();
-// });
-

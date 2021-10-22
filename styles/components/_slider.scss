@@ -223,7 +223,7 @@
   &__description {
     position: absolute;
     background: $alto;
-    border-radius: 5px;
+    border-radius: rem(5px);
     top: 0;
     left: 100%;
     display: none;

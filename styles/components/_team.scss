@@ -14,11 +14,11 @@
 
     @include tablets {
       height: 340px;
-      margin-bottom: 30px;
+      margin-bottom: rem(30px);
     }
 
     @include phones {
-      margin-bottom: 30px;
+      margin-bottom: rem(30px);
     }
   }
 
@@ -97,7 +97,6 @@
   &__description {
     @include textBodylight;
   }
-
 }
 
 .team--version--desktop {
