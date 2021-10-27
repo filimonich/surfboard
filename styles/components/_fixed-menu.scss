@@ -7,17 +7,18 @@
   @include tablets {
     display: none;
   }
+
   @include phones {
     display: none;
   }
 
   &__item {
     margin-bottom: rem(8px);
+  }
 
-    &--active {
-      .fixed-menu__link {
-        border-color: $white;
-      }
+  &__item--active {
+    .fixed-menu__link {
+      border-color: $white;
     }
   }
 
@@ -42,4 +43,15 @@
       transform: translate(-50%, -50%);
     }
   }
+}
+
+.fixed-menu__item--shadowed {
+  .fixed-menu__item--active {
+    .fixed-menu__link {
+      border-color: $black;
+    }
+  }
+  .fixed-menu__link::before {
+    background: $black;
+  } 
 }

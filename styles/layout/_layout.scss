@@ -32,13 +32,15 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-// .input-error {
-//   border: solid rem(3px) red !important;
-// }
+.wrapper__main {
+  height: 100%;  
+  transition: transform 1s;
+  will-change: transform;
+}
 
 // tag styles reset
 h1,

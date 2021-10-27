@@ -35,8 +35,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.wrapper__main {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 h1,
@@ -423,6 +432,7 @@ button {
 }
 
 .section {
+  height: 100vh;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,6 +1012,13 @@ button {
           transform: translate(-50%, -50%);
 }
 
+.fixed-menu__item--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #292929;
+}
+.fixed-menu__item--shadowed .fixed-menu__link::before {
+  background: #292929;
+}
+
 .hamburger {
   display: none;
 }
@@ -1552,7 +1569,6 @@ button {
           align-items: center;
   margin-right: 1.1111111111rem;
   max-width: 25.2222222222rem;
-  position: relative;
 }
 @media screen and (max-width: 768px) {
   .team__item {
@@ -1614,10 +1630,12 @@ button {
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
   height: 0;
+  position: absolute;
 }
 @media screen and (max-width: 768px) {
   .team__content {
     height: 0;
+    position: relative;
   }
 }
 .team__profession {
@@ -1716,6 +1734,7 @@ button {
   width: 100%;
   height: 100%;
   min-height: auto;
+  z-index: -1;
 }
 .products-menu-section__title {
   color: #303236;
@@ -1726,6 +1745,7 @@ button {
   position: absolute;
   top: 20%;
   left: 10%;
+  z-index: -1;
 }
 
 .products-menu-section > .container {
@@ -1749,6 +1769,7 @@ button {
 .products-menu__title {
   position: relative;
   width: 5.6666666667rem;
+  z-index: 2;
 }
 .products-menu__title::before {
   content: "";
@@ -1757,6 +1778,7 @@ button {
   width: 100%;
   height: 100%;
   min-height: auto;
+  z-index: 100;
 }
 .products-menu__img {
   -o-object-fit: cover;
@@ -1786,15 +1808,14 @@ button {
   overflow: hidden;
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
-  width: 0;
+  z-index: -1;
 }
 .products-menu__container {
   padding: 30px 80px 44px 38px;
 }
 
-.products-menu__line-active > .products-menu__content {
-  width: 524px;
-  padding: 20px;
+.products-active > .products-menu__content {
+  padding: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 1;
