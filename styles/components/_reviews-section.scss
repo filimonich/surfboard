@@ -2,7 +2,8 @@
    position: relative;
    background: url("./../image/form/backform.jpg") center top no-repeat;
    background-size: cover;
-   height: 100vh;
+   // height: 100vh;
+   height: 100%;
    min-height: rem(652px);
    z-index: 3;
 
@@ -10,7 +11,8 @@
       background: rgb(57 53 53 / 40%);
       content: "";
       position: absolute;
-      height: 100vh;
+      // height: 100vh;
+      height: 100%;
       width: 100%;
       min-height: rem(652px);
       z-index: -1;

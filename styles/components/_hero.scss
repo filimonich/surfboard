@@ -2,7 +2,7 @@
   background: url("./../image/main/arnaud-mesureur.jpg") center center no-repeat;
   background-size: cover;
   background-color: $blue;
-  height: 100vh;
+  height: 100%;
   min-height: rem(652px);
 
   @include tablets {
