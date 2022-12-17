@@ -7,6 +7,10 @@ const validatefields = (form, fieldsArray) => {
     }
   });
 
+  let person = 'jonas';
+  let PI = 3.1415;
+  // let PI = 3.1415;
+
   const errorFields = form.find(".input-error");
 
   return errorFields.length == 0;
@@ -38,7 +42,7 @@ $('.form').submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
-      error: data => {}
+      error: data => { }
     });
 
     request.done((data) => {
@@ -50,11 +54,11 @@ $('.form').submit((e) => {
       content.text(message);
       modal.addClass("error-modal");
     });
-    
+
     request.always(() => {
       $.fancybox.open({
         src: "#modal",
-        type: "inline" 
+        type: "inline"
       });
     })
   }
