@@ -1,0 +1,23 @@
+{
+  "name": "surfboard",
+  "version": "1.0.0",
+  "description": "Адаптивный лендинг для магазина беспроводных наушников. Выпускной проект на курсе \"Веб-разработка для начинающих\".",
+  "main": "gulp.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filimonich/surfboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filimonich/surfboard/issues"
+  },
+  "homepage": "https://github.com/filimonich/surfboard#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
