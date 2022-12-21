@@ -2,9 +2,11 @@
   "name": "surfboard",
   "version": "1.0.0",
   "description": "Адаптивный лендинг для магазина беспроводных наушников. Выпускной проект на курсе \"Веб-разработка для начинающих\".",
-  "main": "gulp.config.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp build",
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,18 @@
   },
   "homepage": "https://github.com/filimonich/surfboard#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "mobile-detect": "^1.4.5",
+    "normalize.css": "^8.0.1"
   }
 }
