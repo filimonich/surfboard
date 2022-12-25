@@ -35,11 +35,11 @@ task("copy:image", () => {
     .pipe(reload({ stream: true }));
 });
 
-task("copy:video", () => {
-  return src(`${SRC_PATH}/video/*.mp4`)
-    .pipe(dest(`${DIST_PATH}/video`))
-    .pipe(reload({ stream: true }));
-});
+// task("copy:video", () => {
+//   return src(`${SRC_PATH}/video/*.mp4`)
+//     .pipe(dest(`${DIST_PATH}/video`))
+//     .pipe(reload({ stream: true }));
+// });
 
 task("copy:fancy", () => {
   return src([
@@ -152,12 +152,28 @@ task(
       "scripts",
       "copy:fancy",
       "icons",
-      "copy:image",
-      "copy:video"
+      "copy:image"
     ),
     parallel("watch", "server")
   )
 );
+// task(
+//   "default",
+//   series(
+//     "clean",
+//     "sass",
+//     parallel(
+//       "copy:html",
+//       "styles",
+//       "scripts",
+//       "copy:fancy",
+//       "icons",
+//       "copy:image",
+//       "copy:video"
+//     ),
+//     parallel("watch", "server")
+//   )
+// );
 
 task(
   "build",
@@ -169,8 +185,22 @@ task(
       "scripts",
       "copy:fancy",
       "icons",
-      "copy:image",
-      "copy:video"
+      "copy:image"
     )
   )
 );
+// task(
+//   "build",
+//   series(
+//     "clean",
+//     parallel(
+//       "copy:html",
+//       "styles",
+//       "scripts",
+//       "copy:fancy",
+//       "icons",
+//       "copy:image",
+//       "copy:video"
+//     )
+//   )
+// );
