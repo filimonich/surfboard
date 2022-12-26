@@ -3,7 +3,7 @@ module.exports = {
   DIST_PATH: "dist",
   STYLE_LIBS: [
     "node_modules/normalize.css/normalize.css",
-    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
+    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
   ],
   JS_LIBS: [
     "node_modules/jquery/dist/jquery.js",
@@ -11,5 +11,5 @@ module.exports = {
     "src/libs/fancybox-master/dist/jquery.fancybox.min.js",
     "node_modules/mobile-detect/mobile-detect.js",
     "node_modules/jquery-touchswipe/jquery.touchSwipe.js",
-  ]
-}
+  ],
+};
