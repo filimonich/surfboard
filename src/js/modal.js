@@ -1,5 +1,4 @@
 const validatefields = (form, fieldsArray) => {
-
   fieldsArray.forEach((field) => {
     field.removeClass("input-error");
     if (field.val().trim() == "") {
@@ -7,16 +6,16 @@ const validatefields = (form, fieldsArray) => {
     }
   });
 
-  let person = 'jonas';
+  let person = "jonas";
   let PI = 3.1415;
   // let PI = 3.1415;
 
   const errorFields = form.find(".input-error");
 
   return errorFields.length == 0;
-}
+};
 
-$('.form').submit((e) => {
+$(".form").submit((e) => {
   e.preventDefault();
 
   const form = $(e.currentTarget);
@@ -28,7 +27,7 @@ $('.form').submit((e) => {
   const modal = $("#modal");
   const content = modal.find(".modal__title");
 
-  modal.removeClass("error-modal")
+  modal.removeClass("error-modal");
 
   const isValid = validatefields(form, [name, phone, comment, to]);
 
@@ -42,14 +41,14 @@ $('.form').submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
-      error: data => { }
+      error: (data) => {},
     });
 
     request.done((data) => {
       content.text(data.massage);
     });
 
-    request.fail(data => {
+    request.fail((data) => {
       const message = data.responseJSON.message;
       content.text(message);
       modal.addClass("error-modal");
@@ -58,15 +57,16 @@ $('.form').submit((e) => {
     request.always(() => {
       $.fancybox.open({
         src: "#modal",
-        type: "inline"
+        type: "inline",
       });
-    })
+    });
   }
 });
 
-$(".app-submit-modal").click(e => {
+// $(".app-submit-modal").click((e) => {
+$(".app-submit-modal").on("click", (e) => {
   e.preventDefault();
 
   $.fancybox.close();
 });
-  // debugger;
+// debugger;
