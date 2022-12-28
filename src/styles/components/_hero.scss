@@ -1,5 +1,5 @@
 .hero {
-  background: url("./../image/main/arnaud-mesureur.jpg") center center no-repeat;
+  background: url("./image/pics/main/arnaud-mesureur.jpg") center center no-repeat;
   background-size: cover;
   background-color: $blue;
   height: 100%;
@@ -71,6 +71,7 @@
     @include tablets {
       padding: 0 25%;
     }
+
     @include phones {
       padding: 0 14%;
       font-size: rem(18px);
