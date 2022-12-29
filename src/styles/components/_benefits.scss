@@ -16,7 +16,7 @@
     }
 
     &:before {
-      content: url("./../image/section/combined-shape.png");
+      content: url("./pics/image/section/combined-shape.png");
       position: absolute;
       top: rem(30px);
       right: 0;
@@ -25,6 +25,7 @@
       @include tablets {
         display: none;
       }
+
       @include phones {
         display: none;
       }

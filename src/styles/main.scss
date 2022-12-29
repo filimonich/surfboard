@@ -93,6 +93,10 @@ $z-fixed-menu: 100;
 
 //media
 
+@function rem($px) {
+  @return calc($px / $baseFontSize)+0rem;
+}
+
 @mixin tablets {
   @media screen and (max-width: $tablets) {
     @content;

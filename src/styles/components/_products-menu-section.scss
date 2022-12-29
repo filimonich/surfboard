@@ -1,5 +1,5 @@
 .products-menu-section {
-  background: url("./../image/products-menu/menu.jpg") no-repeat;
+  background: url("./image/pics/products-menu/menu.jpg") no-repeat;
   position: relative;
   background-size: cover;
   color: $white;
@@ -7,7 +7,7 @@
   // height: 100vh;
   height: 100%;
   z-index: 3;
-  
+
   &::before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
@@ -17,7 +17,7 @@
     min-height: auto;
     z-index: -1;
   }
-  
+
   &__title {
     @include h1;
     color: $white;
@@ -28,6 +28,6 @@
   }
 }
 
-.products-menu-section > .container {
+.products-menu-section>.container {
   position: initial;
 }

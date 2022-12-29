@@ -12,13 +12,13 @@ html {
 
 html,
 body {
+  font-size: $baseFontSize;
   height: 100%;
 }
 
 body {
   background-color: $white;
   font-family: "Alegreya Sans", Helvetica, sans-serif;
-  font-size: $baseFontSize;
   line-height: 1.42;
   position: relative;
   -webkit-font-smoothing: antialiased;
