@@ -3,14 +3,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: $white-background;
+  background: $white;
 
   @include phones {
     flex-direction: column;
   }
 
   &__text {
-    @include Body2Semibold;
+    @include textBodySemibold;
     color: $black;
 
     @include phones {
@@ -19,7 +19,7 @@
   }
 
   &__phone-number {
-    @include Body1Semibold;
+    @include textSemibold;
     color: $black;
 
 
