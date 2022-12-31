@@ -14,13 +14,13 @@
       border-radius: rem(4px);
 
       &::before {
-        background: url("./../image/main/checkmark.svg") center center no-repeat;
+        background: url("./image/pics/main/checkmark.svg") center center no-repeat;
       }
     }
 
     @include phones {
       margin-bottom: rem(26px);
-      }
+    }
 
   }
 
