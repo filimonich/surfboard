@@ -43,28 +43,28 @@
     height: rem(538px);
     margin: 0 10%;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
-      display: block;
-      width: rem(398px);
-      height: rem(378px);
-      top: 18%;
-      left: 10%;
-      z-index: -10;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background: url('./image/pics/slider/puddle.svg') center center / cover no-repeat;
+    //   display: block;
+    //   width: rem(398px);
+    //   height: rem(378px);
+    //   top: 18%;
+    //   left: 10%;
+    //   z-index: -10;
 
-      @include tablets {
-        width: rem(306px);
-        height: rem(292px);
-        top: 10%;
-        left: 32%;
-      }
+    //   @include tablets {
+    //     width: rem(306px);
+    //     height: rem(292px);
+    //     top: 10%;
+    //     left: 32%;
+    //   }
 
-      @include phones {
-        left: 22%;
-      }
-    }
+    //   @include phones {
+    //     left: 22%;
+    //   }
+    // }
 
     @include tablets {
       width: rem(318px);
@@ -157,7 +157,7 @@
     @include phones {
       width: 98%;
       text-align: center;
-    } 
+    }
   }
 
   &__title {
