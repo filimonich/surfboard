@@ -1,11 +1,47 @@
 .slider-control {
+
   @include tablets {
-    margin-top: rem(240px);
+    margin-top: 15rem;
     align-self: start;
   }
 
   &__icon {
-    width: rem(24px);
-    height: rem(40px);
+    width: 1.5rem;
+    height: 2.5rem;
+  }
+
+  &__icon-left {
+    position: absolute;
+    left: -2%;
+    top: 51%;
+    z-index: 1;
+
+    @include tablets {
+      top: 30%;
+      left: 17%;
+    }
+
+    @include phones {
+      top: 27%;
+      left: 2%;
+    }
+  }
+
+  &__icon-right {
+    position: absolute;
+    left: 100%;
+    top: 51%;
+    transform: rotate(180deg);
+    transform-origin: center center;
+
+    @include tablets {
+      top: 30%;
+      left: 79%;
+    }
+
+    @include phones {
+      top: 27%;
+      left: 92%;
+    }
   }
 }
