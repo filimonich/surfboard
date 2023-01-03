@@ -9,7 +9,7 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <link rel="shortcut icon" href="./image/pics/logo/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="main.min.css">
   <title>Surfboard | Main Page</title>
@@ -23,7 +23,7 @@
         <div class="container hero__container">
           <header class="header">
             <a href="./index.html" class="logo">
-              <svg class="logo__img" alt="Логотип Surfboard">
+              <svg class="logo__img">
                 <use xlink:href="./image/sprite/sprite.svg#logo"></use>
               </svg>
             </a>
@@ -75,19 +75,19 @@
           <div class="hero__icon-section">
             <ul class="asides">
               <li class="asides__item aside">
-                <svg class="aside__icon" alt="design icon">
+                <svg class="aside__icon">
                   <use xlink:href="./image/sprite/sprite.svg#design"></use>
                 </svg>
                 <div class="aside__text">Уникальный дизайн</div>
               </li>
               <li class="asides__item aside">
-                <svg class="aside__icon" alt="materials icon">
+                <svg class="aside__icon">
                   <use xlink:href="./image/sprite/sprite.svg#materials"></use>
                 </svg>
                 <div class="aside__text">Прочные материалы</div>
               </li>
               <li class="asides__item aside">
-                <svg class="aside__icon" alt="delivery icon">
+                <svg class="aside__icon">
                   <use xlink:href="./image/sprite/sprite.svg#delivery"></use>
                 </svg>
                 <div class="aside__text">Быстрая доставка</div>
@@ -95,6 +95,43 @@
             </ul>
           </div>
         </div>
+
+        <div class="hamburger">
+          <span class="hamburger__plank"></span>
+          <span class="hamburger__plank"></span>
+          <span class="hamburger__plank"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+          <div class="overlay__menu" id="overlay__menu">
+            <nav class="menu menu--768">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="headline" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="slider" class="menu__link">Серфборды</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="products-menu" class="menu__link">Меню</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="reviews" class="menu__link">Отзовы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="form" class="menu__link">Как мы работаем</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
       </section>
 
       <section data-sidemenu-theme="black" data-section-id="headline" class="section">
@@ -108,7 +145,7 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <svg class="benefit__icon" alt="perfect fit icon">
+                    <svg class="benefit__icon">
                       <use xlink:href="./image/sprite/sprite.svg#perfect"></use>
                     </svg>
                   </div>
@@ -124,7 +161,7 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <svg class="benefit__icon" alt="eco materials icon">
+                    <svg class="benefit__icon">
                       <use xlink:href="./image/sprite/sprite.svg#strong"></use>
                     </svg>
                   </div>
@@ -140,7 +177,7 @@
               <li class="benefits__item benefit">
                 <div class="benefit__image">
                   <div class="benefit__image-wrapper">
-                    <svg class="benefit__icon" alt="two surfboard icon">
+                    <svg class="benefit__icon">
                       <use xlink:href="./image/sprite/sprite.svg#unique"></use>
                     </svg>
                   </div>
@@ -162,7 +199,7 @@
       <section data-sidemenu-theme="black" data-section-id="slider" class="section section-slider">
         <div class="container slider-container">
           <a class="slider-control">
-            <svg class="slider-control__icon slider-control__icon--direction--prev" alt="left button">
+            <svg class="slider-control__icon slider-control__icon-left slider-control__icon--direction--prev">
               <use xlink:href="./image/sprite/sprite.svg#left-btn"></use>
             </svg>
           </a>
@@ -173,14 +210,14 @@
               </div>
               <div class="slider__items">
                 <div class="slider__dropdown">
-                  <svg class="slider__parameters-icon" alt="parameters icon">
+                  <svg class="slider__parameters-icon">
                     <use xlink:href="./image/sprite/sprite.svg#parameters"></use>
                   </svg>
                   <span class="slider__dropdown-title">Параметры</span>
                   <div class="slider__description">
                     <ul class="slider__dropdown-list">
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="length icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#length"></use>
                         </svg>
                         <div class="slider__dropdown-text">Длина доски</div>
@@ -189,7 +226,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="width icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#width"></use>
                         </svg>
                         <div class="slider__dropdown-text">Ширина доски</div>
@@ -198,7 +235,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="thickness icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#thickness"></use>
                         </svg>
                         <div class="slider__dropdown-text">Толщина</div>
@@ -207,7 +244,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="life-time icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#life-time"></use>
                         </svg>
                         <div class="slider__dropdown-text">Срок службы</div>
@@ -216,8 +253,8 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="weight icon">
-                          <use xlink:href="./image/sprite/sprite.svg#weight"></use>
+                        <svg class="slider__dropdown-icon">
+                          <use xlink:href="./image/sprite/sprite.svg#dropdown-icon-weight"></use>
                         </svg>
                         <div class="slider__dropdown-text">Вес</div>
                         <div class="slider__dropdown-benefits">
@@ -263,14 +300,14 @@
               </div>
               <div class="slider__items">
                 <div class="slider__dropdown">
-                  <svg class="slider__parameters-icon" alt="parameters icon">
+                  <svg class="slider__parameters-icon">
                     <use xlink:href="./image/sprite/sprite.svg#parameters"></use>
                   </svg>
                   <span class="slider__dropdown-title">Параметры</span>
                   <div class="slider__description">
                     <ul class="slider__dropdown-list">
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="length icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#length"></use>
                         </svg>
                         <div class="slider__dropdown-text">Длина доски</div>
@@ -279,7 +316,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="width icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#width"></use>
                         </svg>
                         <div class="slider__dropdown-text">Ширина доски</div>
@@ -288,7 +325,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="thickness icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#thickness"></use>
                         </svg>
                         <div class="slider__dropdown-text">Толщина</div>
@@ -297,7 +334,7 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="life-time icon">
+                        <svg class="slider__dropdown-icon">
                           <use xlink:href="./image/sprite/sprite.svg#life-time"></use>
                         </svg>
                         <div class="slider__dropdown-text">Срок службы</div>
@@ -306,8 +343,8 @@
                         </div>
                       </li>
                       <li class="slider__dropdown-item">
-                        <svg class="slider__dropdown-icon" alt="weight icon">
-                          <use xlink:href="./image/sprite/sprite.svg#weight"></use>
+                        <svg class="slider__dropdown-icon">
+                          <use xlink:href="./image/sprite/sprite.svg#dropdown-icon-weight"></use>
                         </svg>
                         <div class="slider__dropdown-text">Вес</div>
                         <div class="slider__dropdown-benefits">
@@ -348,7 +385,8 @@
             </li>
           </ul>
           <a class="slider-control">
-            <svg class="slider-control__icon slider-control__icon--direction--next" alt="left button">
+            <svg
+              class="slider-control__icon slider-control__icon-right slider-control__icon--direction--next slider-control__rotate">
               <use xlink:href="./image/sprite/sprite.svg#right-btn"></use>
             </svg>
           </a>
@@ -365,7 +403,7 @@
               </div>
               <button class="team__title" type="button">
                 <div class="team__name">Борис Федорович</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -386,7 +424,7 @@
               </div>
               <button class="team__title" type="button">
                 <div class="team__name">Ольга Невзорова</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -407,7 +445,7 @@
               </div>
               <button class="team__title" type="button">
                 <div class="team__name">Ингвар Нильсон</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -428,7 +466,7 @@
               </div>
               <button class="team__title" type="button">
                 <div class="team__name">Екатерина Иванова</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -446,11 +484,12 @@
           </ul>
 
           <!-- mobile -->
+
           <ul class="team team--version--mobile">
             <li class="team__item">
               <button class="team__title" type="button">
                 <div class="team__name">Борис Федорович</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -471,7 +510,7 @@
             <li class="team__item">
               <button class="team__title" type="button">
                 <div class="team__name">Ольга Невзорова</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -492,7 +531,7 @@
             <li class="team__item">
               <button class="team__title" type="button">
                 <div class="team__name">Ингвар Нильсон</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#arrow"></use>
                 </svg>
               </button>
@@ -513,7 +552,7 @@
             <li class="team__item">
               <button class="team__title" type="button">
                 <div class="team__name">Екатерина Иванова</div>
-                <svg class="team__icon" alt="arrow icon">
+                <svg class="team__icon">
                   <use xlink:href="./image/sprite/sprite.svg#rrow"></use>
                 </svg>
               </button>
@@ -626,16 +665,6 @@
                         Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!Я
                         занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
                         Surfboard и не пожалел: 1 место на соревнованиях.
-                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!Я
-                        занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
-                        Surfboard и не пожалел: 1 место на соревнованиях.
-                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!Я
-                        занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
-                        Surfboard и не пожалел: 1 место на соревнованиях.
-                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!Я
-                        занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из
-                        Surfboard и не пожалел: 1 место на соревнованиях.
-                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
                       </p>
                     </div>
                     <div class="reviews__author">Марк Брюлов</div>
@@ -777,59 +806,60 @@
         </div>
       </section>
 
-      <section data-sidemenu-theme="black" data-section-id="contacts" class="section">
-        <div class="container">
-          <div class="map">
-            <img src="./image/pics/map/map.png" alt="map" class="map__icon">
-          </div>
-        </div>
-        <div class="inner-footer">
-          <footer class="footer">
-            <address class="contacts footer__contacts">
-              <span class="contacts__text footer__text">Москва, ул.Новый Арбат, д.31/12</span>
+      <section data-section-id="contacts" class="section section-map">
+        <div class="container-map" id="map"></div>
+        <footer class="footer">
+          <div class="footer-inner footer__contacts">
+            <address class="contacts">
+              <div class="contacts__text footer__text">Москва, ул.Новый Арбат, д.31/12</div>
               <a href="tel:+78009039090" class="contacts__tel footer__phone-number">
                 <span class="contacts__icon">
                   <svg class="contacts__icon-elem">
                     <use xlink:href="./image/sprite/sprite.svg#telephone"></use>
                   </svg>
                 </span>
-                <span class="contacts__text contacts__text--color--black">8 800 903 90 90</span>
+                <span class="contacts__text">8 800 903 90 90</span>
               </a>
             </address>
             <div class="footer__col">
               <ul class="socials">
                 <li class="socials__item socials__item--icon--vk">
-                  <svg class="socials__link">
-                    <use xlink:href="./image/sprite/sprite.svg#vk"></use>
-                  </svg>
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./image/sprite/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="socials__item socials__item--icon--f">
-                  <svg class="socials__link">
-                    <use xlink:href="./image/sprite/sprite.svg#f"></use>
-                  </svg>
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./image/sprite/sprite.svg#f"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="socials__item socials__item--icon--in">
-                  <svg class="socials__link">
-                    <use xlink:href="./image/sprite/sprite.svg#in"></use>
-                  </svg>
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./image/sprite/sprite.svg#in"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="socials__item socials__item--icon--tw">
-                  <svg class="socials__link">
-                    <use xlink:href="./image/sprite/sprite.svg#tw"></use>
-                  </svg>
+                  <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./image/sprite/sprite.svg#tw"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
-          </footer>
+          </div>
 
-        </div>
+        </footer>
       </section>
 
-      <!-- <section class="inner-footer">
-      </section> -->
     </div>
   </div>
-
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
@@ -845,42 +875,6 @@
       <li class="fixed-menu__item"><a href="#" data-scroll-to="contacts" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
-
-  <div class="hamburger">
-    <span class="hamburger__plank"></span>
-    <span class="hamburger__plank"></span>
-    <span class="hamburger__plank"></span>
-  </div>
-
-  <div class="overlay" id="overlay">
-    <div class="overlay__menu" id="overlay__menu">
-      <nav class="menu menu--768">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">О нас</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Серфборды</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Команда</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Меню</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Отзовы</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Как мы работаем</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
 
   <script src="main.min.js"></script>
 </body>
