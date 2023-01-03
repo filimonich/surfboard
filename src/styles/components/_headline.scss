@@ -1,7 +1,7 @@
 .headline {
   text-align: center;
 
-  &__title {
+  &__title.section__title {
     margin-bottom: rem(18px);
 
     @include phones {
