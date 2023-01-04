@@ -2330,13 +2330,11 @@ body.compensate-for-scrollbar {
 }
 @media screen and (max-width: 480px) {
   .slider__img {
+    width: 14rem;
+    height: 18.3333333333rem;
     margin-right: 0;
+    margin-bottom: 5%;
   }
-}
-.slider__pic {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 .slider__items {
   flex: 1;
