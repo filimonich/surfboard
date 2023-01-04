@@ -7,64 +7,19 @@
 
   &__wrapper {
     display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     position: relative;
     z-index: 10;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   background: url('./../image/slider/puddle.svg') center center / cover no-repeat;
-    //   display: block;
-    //   width: rem(398px);
-    //   height: rem(378px);
-    //   top: 18%;
-    //   left: 0;
-    //   z-index: -10;
-
-    //   @include tablets {
-    //     width: rem(306px);
-    //     height: rem(292px);
-    //     top: 10%;
-    //     left: 8%;
-    //   }
-    // }
 
     @include tablets {
       flex-direction: column;
       align-items: center;
     }
-
   }
 
   &__img {
     width: rem(420px);
     height: rem(538px);
     margin: 0 10%;
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   background: url('./image/pics/slider/puddle.svg') center center / cover no-repeat;
-    //   display: block;
-    //   width: rem(398px);
-    //   height: rem(378px);
-    //   top: 18%;
-    //   left: 10%;
-    //   z-index: -10;
-
-    //   @include tablets {
-    //     width: rem(306px);
-    //     height: rem(292px);
-    //     top: 10%;
-    //     left: 32%;
-    //   }
-
-    //   @include phones {
-    //     left: 22%;
-    //   }
-    // }
 
     @include tablets {
       width: rem(318px);
@@ -73,16 +28,11 @@
     }
 
     @include phones {
+      width: rem(252px);
+      height: rem(330px);
       margin-right: 0;
+      margin-bottom: 5%;
     }
-
-  }
-
-  &__pic {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-
   }
 
   &__items {
@@ -92,8 +42,6 @@
   &__dropdown {
     width: rem(90px);
     height: rem(90px);
-    // position: relative;
-    // display: inline-block;
     cursor: pointer;
     background-color: $matisse;
     color: $white;
@@ -117,19 +65,13 @@
     @include tablets {
       display: none;
     }
-
   }
 
   &__parameters-icon {
     fill: $white;
     width: rem(38px);
     height: rem(38px);
-
   }
-
-  // &__dropdown-title {
-
-  // }
 
   &__benefits {
     width: rem(374px);
@@ -141,7 +83,6 @@
       justify-content: center;
       align-items: center;
     }
-
   }
 
   &__benefits-text {
@@ -208,7 +149,6 @@
     @include tablets {
       margin-left: rem(10px);
     }
-
   }
 
   &__option-size {
@@ -227,7 +167,6 @@
     top: 0;
     left: 100%;
     display: none;
-    // display: block;
     padding: rem(18px) rem(10px);
 
     &:before {
@@ -271,5 +210,4 @@
     margin-left: auto;
     margin-right: rem(15px);
   }
-
 }
