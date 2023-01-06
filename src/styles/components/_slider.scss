@@ -24,7 +24,9 @@
     @include tablets {
       width: rem(318px);
       height: rem(418px);
-      margin-right: 0;
+      margin: 0;
+      margin-left: 2%;
+      margin-bottom: 3%;
     }
 
     @include phones {
