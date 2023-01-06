@@ -69,6 +69,20 @@
   &__name {
     @include textBodyBold;
     font-size: rem(20px);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0.188rem;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.438rem 0.281rem 0 0.281rem;
+      border-color: #e01f3c transparent transparent transparent;
+      transition: transform .3s;
+    }
   }
 
   &__icon {
