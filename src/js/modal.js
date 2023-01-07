@@ -8,7 +8,6 @@ const validatefields = (form, fieldsArray) => {
 
   let person = "jonas";
   let PI = 3.1415;
-  // let PI = 3.1415;
 
   const errorFields = form.find(".input-error");
 
