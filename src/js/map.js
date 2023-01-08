@@ -20,7 +20,7 @@ const init = () => {
     {
       draggable: false,
       iconLayout: "default#image",
-      iconImageHref: "image/pics/map/marker-map.svg",
+      iconImageHref: "image/pics/map/marker-m.svg",
       iconImageSize: [46, 57],
       iconImageOffset: [-35, -52],
     }
