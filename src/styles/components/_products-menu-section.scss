@@ -7,6 +7,11 @@
   height: 100%;
   z-index: 1;
 
+  @include tablets {
+    background: url("./image/pics/products-menu/menu-tablets.jpg") top right 16% no-repeat;
+    background-size: cover;
+  }
+
   &::before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
