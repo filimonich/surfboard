@@ -1,63 +1,88 @@
-const mesureWidth = (item) => {
-  // debugger;
-  let reqItemWidth = 0;
+function Accordeon(selector) {
+  const acco = document.querySelector(selector);
+  const items = acco.querySelector(".products-menu").children;
 
-  const screenWidth = $(window).width();
-  const container = item.closest(".products-menu");
-  const titlesBlocks = container.find(".products-menu__title");
-  const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
+  acco.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = e.target.closest(".accordeon-trigger");
 
-  const textContainer = item.find(".products-menu__container");
-  const paddingLeft = parseInt(textContainer.css("padding-left"));
-  const paddingRight = parseInt(textContainer.css("padding-right"));
+    if (!target) return;
 
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    const item = target.parentNode;
 
-  if (isMobile) {
-    reqItemWidth = screenWidth - titlesWidth;
-  } else {
-    reqItemWidth = 500;
-  }
+    if (item.classList.contains("products-active")) {
+      item.classList.remove("products-active");
+    } else {
+      for (let i = 0; i < items.length; i++) {
+        items[i].classList.remove("products-active");
+      }
+      item.classList.add("products-active");
+    }
+  });
+}
 
-  return {
-    container: reqItemWidth,
-    textContainer: reqItemWidth - paddingRight - paddingLeft,
-  };
-};
+new Accordeon("#products-m");
 
-const closeEveryItemInContainer = (container) => {
-  const items = container.find(".products-menu__item");
-  const content = container.find(".products-menu__content");
+// const mesureWidth = (item) => {
+//   // debugger;
+//   let reqItemWidth = 0;
 
-  items.removeClass("products-active");
-  content.width(0);
-};
+//   const screenWidth = $(window).width();
+//   const container = item.closest(".products-menu");
+//   const titlesBlocks = container.find(".products-menu__title");
+//   const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
 
-const openItem = (item) => {
-  const hiddenContent = item.find(".products-menu__content");
-  const reqWidth = mesureWidth(item);
-  const textBlock = item.find(".products-menu__container");
+//   const textContainer = item.find(".products-menu__container");
+//   const paddingLeft = parseInt(textContainer.css("padding-left"));
+//   const paddingRight = parseInt(textContainer.css("padding-right"));
 
-  item.addClass("products-active");
-  hiddenContent.width(reqWidth.container);
-  textBlock.width(reqWidth.textContainer);
-};
+//   const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-$(".products-menu__title").on("click", (e) => {
-  e.preventDefault();
+//   if (isMobile) {
+//     reqItemWidth = screenWidth - titlesWidth;
+//   } else {
+//     reqItemWidth = 500;
+//   }
 
-  const $this = $(e.currentTarget);
-  const item = $this.closest(".products-menu__item");
-  const itemOpened = item.hasClass("products-active");
-  const container = $this.closest(".products-menu");
+//   return {
+//     container: reqItemWidth,
+//     textContainer: reqItemWidth - paddingRight - paddingLeft,
+//   };
+// };
 
-  if (itemOpened) {
-    closeEveryItemInContainer(container);
-  } else {
-    closeEveryItemInContainer(container);
-    openItem(item);
-  }
-});
+// const closeEveryItemInContainer = (container) => {
+//   const items = container.find(".products-menu__item");
+//   const content = container.find(".products-menu__content");
+
+//   items.removeClass("products-active");
+//   content.width(0);
+// };
+
+// const openItem = (item) => {
+//   const hiddenContent = item.find(".products-menu__content");
+//   const reqWidth = mesureWidth(item);
+//   const textBlock = item.find(".products-menu__container");
+
+//   item.addClass("products-active");
+//   hiddenContent.width(reqWidth.container);
+//   textBlock.width(reqWidth.textContainer);
+// };
+
+// $(".products-menu__title").on("click", (e) => {
+//   e.preventDefault();
+
+//   const $this = $(e.currentTarget);
+//   const item = $this.closest(".products-menu__item");
+//   const itemOpened = item.hasClass("products-active");
+//   const container = $this.closest(".products-menu");
+
+//   if (itemOpened) {
+//     closeEveryItemInContainer(container);
+//   } else {
+//     closeEveryItemInContainer(container);
+//     openItem(item);
+//   }
+// });
 
 // $(".products-menu__item").on("click", e => {
 //   debugger;

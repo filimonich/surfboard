@@ -53,9 +53,10 @@
   }
 
   &__container {
-    padding: 30px 80px 44px 38px;
+    padding: rem(30px) rem(80px) rem(44px) rem(38px);
   }
 }
+
 
 .products-active>.products-menu__content {
   padding: auto;
