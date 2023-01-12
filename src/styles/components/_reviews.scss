@@ -6,7 +6,6 @@
     @include tablets {
       margin-bottom: rem(32px);
     }
-
   }
 
   &__list {
@@ -73,7 +72,6 @@
     @include phones {
       margin-left: 0;
     }
-
   }
 
   &__title {
@@ -112,7 +110,6 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
-
   }
 
   &__switcher-item.reviews__item--active {

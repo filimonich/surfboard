@@ -39,7 +39,6 @@
     }
   }
 
-  
   &__input {
     width: 100%;
     border: none;
@@ -47,7 +46,6 @@
     border: solid rem(3px) transparent;
     border-radius: rem(4px);
     
-
     &--textarea {
       height: rem(168px);
       resize: none;
@@ -93,5 +91,4 @@
     display: flex;
     justify-content: center;
   }
-
 }

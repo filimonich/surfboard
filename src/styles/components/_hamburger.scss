@@ -8,10 +8,8 @@
     width: rem(24px);
     height: rem(20px);
     cursor: pointer;
-    // display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    // display: none;
     z-index: 15;
     transition: all .4s;
     display: inline-flex;
@@ -20,7 +18,6 @@
   &__plank {
     width: 100%;
     border-radius: rem(10px);
-    // display: block;
     background: $white;
     height: rem(4px);
     top: 0;
