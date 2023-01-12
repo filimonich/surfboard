@@ -1894,6 +1894,12 @@ body.compensate-for-scrollbar {
   height: 100%;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .products-menu-section {
+    background: url("./image/pics/products-menu/menu-tablets.jpg") top right 16% no-repeat;
+    background-size: cover;
+  }
+}
 .products-menu-section::before {
   content: "";
   background: rgba(0, 0, 0, 0.2);
@@ -1910,6 +1916,12 @@ body.compensate-for-scrollbar {
   left: 10%;
   z-index: 2;
 }
+@media screen and (max-width: 480px) {
+  .products-menu-section__title.section__title {
+    font-size: 2.2222222222rem;
+    left: 4%;
+  }
+}
 
 .products-menu-section > .container {
   position: initial;
@@ -1921,6 +1933,12 @@ body.compensate-for-scrollbar {
   right: 0;
   bottom: 0;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .products-menu {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 .products-menu__item {
   display: flex;
@@ -1938,6 +1956,11 @@ body.compensate-for-scrollbar {
   height: 100%;
   min-height: auto;
   z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title {
+    width: 5.625rem;
+  }
 }
 .products-menu__img {
   object-fit: cover;
@@ -1960,21 +1983,52 @@ body.compensate-for-scrollbar {
 }
 .products-menu__content {
   background: rgba(51, 53, 55, 0.9);
-  width: 0;
+  max-width: 0;
   position: relative;
   overflow: hidden;
-  transition: width 0.7s;
+  transition: max-width 0.7s;
   z-index: -1;
 }
 .products-menu__container {
-  padding: 30px 80px 44px 38px;
+  padding: 1.6666666667rem 4.4444444444rem 2.4444444444rem 2.1111111111rem;
+  overflow-y: auto;
+  min-width: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .products-menu__container {
+    min-width: calc(100vw - 30rem);
+    padding-right: 1.563rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-menu__container {
+    min-width: calc(100vw - 8rem);
+  }
 }
 
 .products-active > .products-menu__content {
-  padding: auto;
-  box-sizing: border-box;
-  opacity: 1;
-  z-index: 10;
+  max-width: 36rem;
+}
+@media screen and (max-width: 768px) {
+  .products-active > .products-menu__content {
+    width: calc(100vw - 16.9rem);
+  }
+}
+@media screen and (max-width: 480px) {
+  .products-active > .products-menu__content {
+    width: calc(100vw - 5rem);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products-active {
+    position: absolute;
+  }
+}
+
+li.products-menu__item.products-active {
+  width: 100%;
 }
 
 .radio {
