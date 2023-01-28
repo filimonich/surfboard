@@ -1942,6 +1942,7 @@ body.compensate-for-scrollbar {
 }
 .products-menu__item {
   display: flex;
+  z-index: 2;
 }
 .products-menu__title {
   position: relative;
@@ -2007,7 +2008,7 @@ body.compensate-for-scrollbar {
 }
 
 .products-active > .products-menu__content {
-  max-width: 36rem;
+  max-width: 29.1111111111rem;
 }
 @media screen and (max-width: 768px) {
   .products-active > .products-menu__content {
