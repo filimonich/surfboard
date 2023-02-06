@@ -57,10 +57,10 @@
 
   &__content {
     background: rgba(51, 53, 55, 0.9);
-    max-width: 0;
+    width: 0;
     position: relative;
     overflow: hidden;
-    transition: max-width 0.7s ease-in-out 0.5s;
+    transition: width 0.7s ease-in-out 0.5s;
     // z-index: 100;
   }
 
@@ -71,7 +71,7 @@
 
     @include tablets {
       min-width: calc(100vw - 30rem);
-      padding-right: 7.563rem;
+      padding-right: 2.563rem;
     }
 
     @include phones {
@@ -82,7 +82,7 @@
 }
 
 .products-active>.products-menu__content {
-  max-width: rem(524px);
+  width: rem(524px);
   // z-index: 2;
 
   @include tablets {
