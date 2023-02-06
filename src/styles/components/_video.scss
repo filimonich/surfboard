@@ -1,7 +1,16 @@
 .video {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 36.7777777778rem;
-  max-height: 21.7777777778rem;
+  position: relative;
+  padding: 0 0 56.25% 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
