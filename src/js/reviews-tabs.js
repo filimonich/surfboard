@@ -4,7 +4,7 @@ const findBlockByAlias = (alias) => {
   });
 };
 
-$(".reviews__switcher-link").click((e) => {
+$(".reviews__switcher-link").on("click", (e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);

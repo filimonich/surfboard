@@ -6,15 +6,12 @@ const validatefields = (form, fieldsArray) => {
     }
   });
 
-  let person = "jonas";
-  let PI = 3.1415;
-
   const errorFields = form.find(".input-error");
 
   return errorFields.length == 0;
 };
 
-$(".form").submit((e) => {
+$(".form").on("submit", (e) => {
   e.preventDefault();
 
   const form = $(e.currentTarget);
@@ -62,10 +59,8 @@ $(".form").submit((e) => {
   }
 });
 
-// $(".app-submit-modal").click((e) => {
 $(".app-submit-modal").on("click", (e) => {
   e.preventDefault();
 
   $.fancybox.close();
 });
-// debugger;

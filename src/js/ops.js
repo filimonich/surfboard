@@ -22,22 +22,22 @@ const countSectionPosition = (sectionEq) => {
 };
 
 const changeMenuThemeForSection = (sectionEq) => {
-    const currentSection = section.eq(sectionEq);
-    const menuTheme = currentSection.attr("data-sidemenu-theme");
-    const activeClass = "fixed-menu__item--shadowed";
+  const currentSection = section.eq(sectionEq);
+  const menuTheme = currentSection.attr("data-sidemenu-theme");
+  const activeClass = "fixed-menu__item--shadowed";
 
-    if (menuTheme == "black") {
-      sideMenu.addClass(activeClass);
-    } else {
-      sideMenu.removeClass("fixed-menu__item--shadowed")
-    }
+  if (menuTheme == "black") {
+    sideMenu.addClass(activeClass);
+  } else {
+    sideMenu.removeClass("fixed-menu__item--shadowed");
+  }
 };
 
 const resetActiveClassForItem = (item, itemEq, activeClass) => {
   item.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
 };
 
-const performTransition = sectionEq => {
+const performTransition = (sectionEq) => {
   if (inScroll) return;
 
   const transitionOver = 1000;
@@ -48,23 +48,21 @@ const performTransition = sectionEq => {
   const position = countSectionPosition(sectionEq);
 
   changeMenuThemeForSection(sectionEq);
-      
+
   display.css({
     transform: `translateY(${position}%)`,
   });
-  
+
   resetActiveClassForItem(section, sectionEq, "active");
 
   setTimeout(() => {
     inScroll = false;
     resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
-
   }, transitionOver + mouseInertiaOver);
-
 };
 
 const viewportScroller = () => {
-  const activeSection = section.filter(".active")
+  const activeSection = section.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
@@ -82,20 +80,20 @@ const viewportScroller = () => {
   };
 };
 
-$(window).on("wheel", e => {
+$(window).on("wheel", (e) => {
   const deltaY = e.originalEvent.deltaY;
   const scroller = viewportScroller();
 
   if (deltaY > 0) {
     scroller.next();
   }
-  
+
   if (deltaY < 0) {
     scroller.prev();
   }
 });
 
-$(window).on("keydown", e => {
+$(window).on("keydown", (e) => {
   const tagName = e.target.tagName.toLowerCase();
   const userTypingInInputs = tagName == "input" || tagName == "textarea";
   const scroller = viewportScroller();
@@ -106,18 +104,18 @@ $(window).on("keydown", e => {
     case 38:
       scroller.prev();
       break;
-      
+
     case 40:
-      scroller.next();    
+      scroller.next();
       break;
   }
 });
 
-$(".wrapper").on("touchmove", e => e.preventDefault());
+$(".wrapper").on("touchmove", (e) => e.preventDefault());
 
-$("[data-scroll-to]").click(e => {
+$("[data-scroll-to]").on("click", (e) => {
   e.preventDefault();
-  
+
   const $this = $(e.currentTarget);
   const target = $this.attr("data-scroll-to");
   const reqSection = $(`[data-section-id=${target}]`);
@@ -125,19 +123,17 @@ $("[data-scroll-to]").click(e => {
   performTransition(reqSection.index());
 });
 
-// debugger;
 if (isMobile) {
   // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
   $("body").swipe({
     swipe: function (event, direction) {
       const scroller = viewportScroller();
       let scrollDirection = "";
-      
+
       if (direction == "up") scrollDirection = "next";
       if (direction == "down") scrollDirection = "prev";
-      
+
       scroller[scrollDirection]();
     },
   });
-};
-  
+}
