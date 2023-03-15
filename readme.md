@@ -1,4 +1,4 @@
-# Учебный проект
+# Учебный проект «Beats Solo 3»
 
 Адаптивный лендинг для магазина беспроводных наушников. Выпускной проект на курсе "Веб-разработка для начинающих".
 
@@ -11,13 +11,15 @@
 - SVG
 - Flexbox
 
+[**Демо**](https://filimonich.github.io/surfboard)
+
 ## Чтобы развернуть проект необходимо:
 
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/)
 
 ```sh
-$ git clone
-$ cd surfboard
+$ git clone https://github.com/filimonich/surfboard.git
+$ cd project_october
 $ npm i
 ```
 
