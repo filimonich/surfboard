@@ -10,8 +10,8 @@
   }
 
   &__text {
-    @include textBodySemibold;
     color: $black;
+    @include textBodySemibold;
 
     @include phones {
       margin-bottom: 0.75rem;
@@ -21,7 +21,6 @@
   &__phone-number {
     @include textSemibold;
     color: $black;
-
 
     @include phones {
       justify-content: center;
