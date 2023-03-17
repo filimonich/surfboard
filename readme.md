@@ -11,6 +11,12 @@
 - SVG
 - Flexbox
 
+<p align="center">
+<a href="https://ibb.co/FbgYw9n"><img src="https://i.ibb.co/HDnPz0X/Image.png" alt="Main-1100" border="0" width="460"
+<a href="https://ibb.co/WkjqCg2"><img src="https://i.ibb.co/v3Rg9Zj/image.png" alt="Tablets-768" border="0" width="200"></a>
+<a href="https://ibb.co/1KvRGbn"><img src="https://i.ibb.co/wC0phYL/image.png" alt="Phones-480" border="0" width="120"></a>
+</p>
+
 [**Демо**](https://filimonich.github.io/surfboard)
 
 ## Чтобы развернуть проект необходимо:
